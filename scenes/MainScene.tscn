@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://buq6kro0tnkdx"]
+
+[ext_resource type="Script" uid="uid://bc6s7fvt2ipg5" path="res://scripts/main_scene.gd" id="1_611at"]
+[ext_resource type="Texture2D" uid="uid://dltijc8rdea0i" path="res://assets/images/courtroom.png" id="1_c6dvc"]
+[ext_resource type="PackedScene" uid="uid://nqf217fjknwc" path="res://scenes/character.tscn" id="2_611at"]
+[ext_resource type="PackedScene" uid="uid://bcbj20tibysft" path="res://scenes/dialogue_ui.tscn" id="3_k24pf"]
+
+[node name="MainScene" type="Node2D" unique_id=739507597]
+script = ExtResource("1_611at")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1300221099]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1035514211]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_c6dvc")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=110108050]
+
+[node name="Control" type="Control" parent="CanvasLayer2" unique_id=406455571]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Character" parent="CanvasLayer2/Control" unique_id=104904942 instance=ExtResource("2_611at")]
+unique_name_in_owner = true
+position = Vector2(-54, -325)
+scale = Vector2(0.15, 0.15)
+
+[node name="DialogueUI" parent="CanvasLayer2" unique_id=26571296 instance=ExtResource("3_k24pf")]
+unique_name_in_owner = true

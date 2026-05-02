@@ -1,0 +1,14 @@
+[gd_resource type="Theme" format=3 uid="uid://0rstolpi5e0m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j2q5q"]
+content_margin_left = 40.0
+content_margin_top = 20.0
+content_margin_right = 40.0
+content_margin_bottom = 20.0
+bg_color = Color(0, 0, 0, 0.42745098)
+border_width_top = 1
+border_color = Color(0.46666667, 0.8666667, 0.972549, 0.4509804)
+
+[resource]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_j2q5q")
+RichTextLabel/font_sizes/normal_font_size = 40
