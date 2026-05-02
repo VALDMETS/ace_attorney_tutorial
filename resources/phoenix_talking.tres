@@ -1,0 +1,72 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://comup2ylbr8t1"]
+
+[ext_resource type="Texture2D" uid="uid://cr6opgd5o68n7" path="res://assets/sprites/phoenix/idle/frame_0_delay-3.5s.png" id="1_piddp"]
+[ext_resource type="Texture2D" uid="uid://bunn8vs6fc25c" path="res://assets/sprites/phoenix/idle/frame_1_delay-0.1s.png" id="2_mpofm"]
+[ext_resource type="Texture2D" uid="uid://dlpda56vaymje" path="res://assets/sprites/phoenix/idle/frame_2_delay-0.2s.png" id="3_c6vmv"]
+[ext_resource type="Texture2D" uid="uid://bt2ek2twgsrbe" path="res://assets/sprites/phoenix/talking/frame_0_delay-0.2s.png" id="4_l7ide"]
+[ext_resource type="Texture2D" uid="uid://c2hiyf4uirpcp" path="res://assets/sprites/phoenix/talking/frame_1_delay-0.2s.png" id="5_jxqyw"]
+[ext_resource type="Texture2D" uid="uid://c5p5duu6demb8" path="res://assets/sprites/phoenix/talking/frame_2_delay-0.2s.png" id="6_21duq"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_piddp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mpofm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_c6vmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mpofm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_piddp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_piddp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_piddp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_piddp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_piddp")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_l7ide")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jxqyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_21duq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jxqyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l7ide")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_21duq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jxqyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l7ide")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 8.0
+}]

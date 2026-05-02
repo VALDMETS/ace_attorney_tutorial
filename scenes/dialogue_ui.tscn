@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bcbj20tibysft"]
+
+[ext_resource type="Theme" uid="uid://0rstolpi5e0m" path="res://resources/new_theme.tres" id="1_njptv"]
+[ext_resource type="Script" uid="uid://bgyi58x2oocen" path="res://scenes/dialogue_ui.gd" id="2_6q285"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_njptv"]
+font_size = 25
+
+[node name="DialogueUI" type="Control" unique_id=26571296]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_njptv")
+script = ExtResource("2_6q285")
+
+[node name="DialogueBox" type="PanelContainer" parent="." unique_id=1438986244]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -173.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="DialogLine" type="RichTextLabel" parent="DialogueBox" unique_id=1543477993]
+unique_name_in_owner = true
+layout_mode = 2
+bbcode_enabled = true
+text = "This is a line of dialogue"
+
+[node name="SpeakerBox" type="Control" parent="." unique_id=1556730835]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -225.0
+offset_right = 194.0
+offset_bottom = -172.0
+grow_vertical = 0
+
+[node name="Polygon2D" type="Polygon2D" parent="SpeakerBox" unique_id=1488957153]
+color = Color(0.36862746, 0.7176471, 0.98039216, 0.57254905)
+offset = Vector2(0, 2)
+polygon = PackedVector2Array(0, 0, 180, 0, 200, 50, 0, 50)
+
+[node name="SpeakerName" type="Label" parent="SpeakerBox" unique_id=866980260]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.5
+offset_top = -11.5
+offset_right = 23.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Name"
+label_settings = SubResource("LabelSettings_njptv")
+
+[node name="Control" type="Control" parent="." unique_id=2055669521]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Polygon2D" type="Polygon2D" parent="Control" unique_id=1504014631]
+position = Vector2(-40, -22)
+polygon = PackedVector2Array(0, 0, 40, 20, 0, 40)
