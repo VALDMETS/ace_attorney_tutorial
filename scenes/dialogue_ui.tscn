@@ -2,6 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://0rstolpi5e0m" path="res://resources/new_theme.tres" id="1_njptv"]
 [ext_resource type="Script" uid="uid://bgyi58x2oocen" path="res://scenes/dialogue_ui.gd" id="2_6q285"]
+[ext_resource type="Script" uid="uid://bhffio2iwms4n" path="res://scripts/text_blip_sound.gd" id="3_jx1sv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_njptv"]
 font_size = 25
@@ -33,6 +34,7 @@ unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
 text = "This is a line of dialogue"
+scroll_active = false
 
 [node name="SpeakerBox" type="Control" parent="." unique_id=1556730835]
 layout_mode = 1
@@ -81,3 +83,7 @@ grow_vertical = 0
 [node name="Polygon2D" type="Polygon2D" parent="Control" unique_id=1504014631]
 position = Vector2(-40, -22)
 polygon = PackedVector2Array(0, 0, 40, 20, 0, 40)
+
+[node name="TextBlipSound" type="AudioStreamPlayer" parent="." unique_id=1895475766]
+unique_name_in_owner = true
+script = ExtResource("3_jx1sv")

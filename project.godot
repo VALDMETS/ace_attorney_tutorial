@@ -15,6 +15,18 @@ run/main_scene="uid://buq6kro0tnkdx"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://resources/icon.svg"
 
+[autoload]
+
+__InkRuntime="*uid://dbdxw0dhxn5s"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/inkgd/plugin.cfg")
+
+[inkgd]
+
+register_templates=true
+
 [input]
 
 next_line={
